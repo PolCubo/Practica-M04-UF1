@@ -4,63 +4,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PlayCheap - Compara precios de videojuegos</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="assets/images/logo.png" type="image/png">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="icon" href="assets/img/LogoPrincipal.jpeg" type="image/jpeg">
+    <script defer src="script.js"></script>
 </head>
 <body>
     <header class="header">
-        <img src="assets/images/logo.png" alt="Logo de GamePriceFinder" width="100" class="logo">
+        <img src="assets/img/LogoPrincipal.jpeg" alt="Logo de PlayCheap" class="logo">
         <h1 class="title">PlayCheap</h1>
-        <p class="subtitle">Compara precios de videojuegos en todas las tiendas online</p>
     </header>
 
     <nav class="navbar">
         <ul class="nav-list">
             <li class="nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
             <li class="nav-item"><a href="pages/about.html" class="nav-link">Acerca de</a></li>
-            <li class="nav-item"><a href="pages/contact.html" class="nav-link">Contacto</a></li>
+            <li class="nav-item"><a href="pages/contacto.html" class="nav-link">Contacto</a></li>
         </ul>
     </nav>
 
-    <section class="main-section">
-        <h2 class="section-title">Últimas ofertas</h2>
-
-        <!-- Juego 1 -->
-        <article class="game-article">
-            <h3 class="game-title">Monster Hunter Wilds</h3>
-            <p class="game-description">Disponible en las siguientes tiendas:</p>
-            <ul class="price-list">
-                <li class="price-item">Steam: <span class="original-price">69.99 EUR</span> <span class="discounted-price">57.99 EUR</span> <a href="pages/game-details.html" class="buy-link">Comprar</a></li>
-                <li class="price-item">Amazon: <span class="original-price">59.99 EUR</span> <span class="discounted-price">49.99 EUR</span> <a href="pages/game-details.html" class="buy-link">Comprar</a></li>
-            </ul>
-        </article>
-
-        <!-- Juego 2 -->
-        <article class="game-article">
-            <h3 class="game-title">Elden Ring</h3>
-            <p class="game-description">Disponible en las siguientes tiendas:</p>
-            <ul class="price-list">
-                <li class="price-item">Steam: <span class="original-price">59.99 EUR</span> <span class="discounted-price">49.99 EUR</span> <a href="pages/game-details.html" class="buy-link">Comprar</a></li>
-                <li class="price-item">PlayStation Store: <span class="original-price">69.99 EUR</span> <span class="discounted-price">55.99 EUR</span> <a href="pages/game-details.html" class="buy-link">Comprar</a></li>
-            </ul>
-        </article>
-
-        <!-- Juego 3 -->
-        <article class="game-article">
-            <h3 class="game-title">Assassin's Creed Shadows</h3>
-            <p class="game-description">Disponible en las siguientes tiendas:</p>
-            <ul class="price-list">
-                <li class="price-item">CDKeys: <span class="original-price">69.99 EUR</span> <span class="discounted-price">47.99 EUR</span> <a href="pages/game-details.html" class="buy-link">Comprar</a></li>
-                <li class="price-item">G2A: <span class="original-price">59.99 EUR</span> <span class="discounted-price">50.60 EUR</span> <a href="pages/game-details.html" class="buy-link">Comprar</a></li>
-            </ul>
-        </article>
+    <section class="carousel">
+        <div class="carousel-container">
+            <img src="assets/images/game1.jpg" class="carousel-image">
+            <img src="assets/images/game2.jpg" class="carousel-image">
+            <img src="assets/images/game3.jpg" class="carousel-image">
+        </div>
     </section>
 
+    <section class="game-grid">
+        <h2 class="section-title">Juegos mas comprados</h2>
+        <div class="game-row">
+            <article class="game-card">
+                <img src="assets/img/MonsterHunterWild.webp" alt="Monster Hunter Wilds" class="game-image">
+                <h3 class="game-title">Monster Hunter Wilds</h3>
+                <p class="game-description">Disponible en varias tiendas.</p>
+                <a href="pages/game-details.html" class="buy-link">Ver más</a>
+            </article>
+            <article class="game-card">
+                <img src="assets/img/EldenRing3.webp" alt="Elden Ring" class="game-image">
+                <h3 class="game-title">Elden Ring</h3>
+                <p class="game-description">Disponible en varias tiendas.</p>
+                <a href="pages/game-details.html" class="buy-link">Ver más</a>
+            </article>
+            <article class="game-card">
+                <img src="assets/img/AssassinsCreedShadows.webp" alt="Assassin's Creed Shadows" class="game-image">
+                <h3 class="game-title">Assassin's Creed Shadows</h3>
+                <p class="game-description">Disponible en varias tiendas.</p>
+                <a href="pages/game-details.html" class="buy-link">Ver más</a>
+            </article>
+            <article class="game-card">
+                <img src="assets/img/Cyberpunk2077.webp" alt="Cyberpunk 2077" class="game-image">
+                <h3 class="game-title">Cyberpunk 2077</h3>
+                <p class="game-description">Disponible en varias tiendas.</p>
+                <a href="pages/game-details.html" class="buy-link">Ver más</a>
+            </article>
+        </div>
+        <div class="game-row">
+            <article class="game-card">
+                <img src="assets/img/TheWitcher3.webp" alt="The Witcher 3" class="game-image">
+                <h3 class="game-title">The Witcher 3</h3>
+                <p class="game-description">Disponible en varias tiendas.</p>
+                <a href="pages/game-details.html" class="buy-link">Ver más</a>
+            </article>
+            <article class="game-card">
+                <img src="assets/img/HorizonForbidden.webp" alt="Horizon Forbidden West" class="game-image">
+                <h3 class="game-title">Horizon Forbidden West</h3>
+                <p class="game-description">Disponible en varias tiendas.</p>
+                <a href="pages/game-details.html" class="buy-link">Ver más</a>
+            </article>
+            <article class="game-card">
+                <img src="assets/img/GodofWarRagnarok.webp" alt="God of War" class="game-image">
+                <h3 class="game-title">God of War Ragnarok</h3>
+                <p class="game-description">Disponible en varias tiendas.</p>
+                <a href="pages/game-details.html" class="buy-link">Ver más</a>
+            </article>
+            <article class="game-card">
+                <img src="assets/img/RedDeadRedemption2.webp" alt="Red Dead Redemption 2" class="game-image">
+                <h3 class="game-title">Red Dead Redemption 2</h3>
+                <p class="game-description">Disponible en varias tiendas.</p>
+                <a href="pages/game-details.html" class="buy-link">Ver más</a>
+            </article>
+        </div>
+    </section>
+    
+
     <footer class="footer">
-        <p class="footer-text">&copy; 2023 GamePriceFinder. Todos los derechos reservados.</p>
+        <p class="footer-text">&copy; 2025 GamePriceFinder. Todos los derechos reservados.</p>
         <p class="footer-text">Síguenos en:
-            <a href="https://twitter.com/GamePriceFinder" class="social-link">Twitter</a> |
-            <a href="https://facebook.com/GamePriceFinder" class="social-link">Facebook</a>
+            <a href="" class="social-link">Twitter</a> |
+            <a href="" class="social-link">Facebook</a>
         </p>
     </footer>
 </body>
