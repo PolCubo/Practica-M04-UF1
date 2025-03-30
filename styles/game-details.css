@@ -1,9 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* General styles */
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #F4F4F4;
@@ -72,60 +67,87 @@ nav ul li a:hover {
     color: #212121;
 }
 
-.contact-section {
+/* Game details section */
+.game-details {
     background-color: #FFFFFF;
     padding: 20px;
     border-radius: 8px;
-    margin-top: 20px;
-    animation: fadeIn 1s ease-in-out;
-}
-
-.section-title {
-    font-size: 32px;
     margin-bottom: 16px;
-    color: #FFC107;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.form-group {
+.game-header {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.game-cover {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.game-info {
+    flex: 1;
+}
+
+.game-title {
+    font-size: 28px;
+    color: #212121;
+    margin-bottom: 10px;
+}
+
+.game-description {
+    font-size: 16px;
+    color: #757575;
     margin-bottom: 15px;
 }
 
-.form-group label {
-    display: block;
-    font-size: 18px;
+.game-meta {
+    list-style: none;
+    padding: 0;
+    font-size: 14px;
+    color: #212121;
 }
 
-.form-group input,
-.form-group select {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+.game-meta li {
+    margin-bottom: 8px;
 }
 
-.submit-button {
-    background-color: #FFC107;
-    color: #FFFFFF;
-    padding: 12px 24px;
-    border-radius: 5px;
-    font-size: 18px;
-    cursor: pointer;
-    border: none;
-    transition: background-color 0.3s ease;
-}
-
-.submit-button:hover {
-    background-color: #FF9800;
-}
-
-#confirmation-message {
-    font-size: 18px;
-    color: #4CAF50;
+/* Price comparison table */
+.price-comparison {
     margin-top: 20px;
 }
 
+.price-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 16px;
+}
+
+.price-table th,
+.price-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+.price-table th {
+    background-color: #607D8B;
+    color: #FFFFFF;
+}
+
+.price-table tr:nth-child(even) {
+    background-color: #F4F4F4;
+}
+
+.price-table tr:hover {
+    background-color: #FFEB3B;
+}
+
+/* Footer styles */
 footer {
     background: #000000;
     color: #FFFFFF;
@@ -135,10 +157,6 @@ footer {
     margin-top: 16px;
 }
 
-footer p {
-    margin-bottom: 8px;
-}
-
 footer a {
     color: #FFEB3B;
     text-decoration: none;
@@ -146,35 +164,4 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-/* Add these styles to your existing CSS file */
-
-.form-group textarea {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    resize: vertical;
-    font-family: 'Poppins', sans-serif;
-}
-
-.error {
-    color: #D32F2F;
-    font-size: 18px;
-    margin-top: 20px;
-    background-color: #FFEBEE;
-    padding: 10px;
-    border-radius: 5px;
-    border-left: 4px solid #D32F2F;
 }

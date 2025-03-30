@@ -4,13 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detalles del juego - GamePriceFinder</title>
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../styles/game-details.css">
 </head>
 <body>
     <header class="header">
-        <img src="../assets/images/logo.png" alt="Logo de GamePriceFinder" width="100" class="logo">
-        <h1 class="title">GamePriceFinder</h1>
-        <p class="subtitle">Compara precios de videojuegos en todas las tiendas online</p>
+        <img src="../assets/img/LogoPrincipal.jpeg" alt="Logo de PlayCheap" class="logo">
+        <h1 class="title">PlayCheap</h1>
     </header>
 
     <nav class="navbar">
@@ -22,13 +21,55 @@
     </nav>
 
     <section class="game-details">
-        <h2 class="game-title">Assassin's Creed Shadows</h2>
-        <p class="game-description">Un nuevo juego de la saga Assassin's Creed lleno de acción y aventura.</p>
-        <div class="price-info">
-            <p class="best-price">Mejor precio: <span class="discounted-price">47.99 EUR</span> <span class="original-price">69.99 EUR</span></p>
-            <p class="store">Tienda: CDKeys</p>
+        <div class="game-header">
+            <img src="/assets/img/AssassinsCreedShadows.webp" alt="Assassin's Creed Shadows" class="game-cover">
+            <div class="game-info">
+                <h2 class="game-title">Assassin's Creed Shadows</h2>
+                <p class="game-description">
+                    Un nuevo juego de la saga Assassin's Creed lleno de acción y aventura. Explora un mundo abierto lleno de desafíos y secretos.
+                </p>
+                <ul class="game-meta">
+                    <li><strong>Fecha de lanzamiento:</strong> 20 Marzo 2025</li>
+                    <li><strong>Plataformas:</strong> PC, PS5, Xbox Series X</li>
+                    <li><strong>Desarrollador:</strong> Ubisoft Quebec</li>
+                    <li><strong>Etiquetas:</strong> Acción, Aventura, RPG</li>
+                </ul>
+            </div>
         </div>
-        <a href="https://cdkeys.com" class="buy-button">Comprar ahora</a>
+
+        <div class="price-comparison">
+            <h3 class="section-title">Comparar precios</h3>
+            <table class="price-table">
+                <thead>
+                    <tr>
+                        <th>Tienda</th>
+                        <th>Región</th>
+                        <th>Precio</th>
+                        <th>Descuento</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Eneba</td>
+                        <td>Global</td>
+                        <td>48.40€</td>
+                        <td>-14%</td>
+                    </tr>
+                    <tr>
+                        <td>G2A</td>
+                        <td>Europa</td>
+                        <td>47.07€</td>
+                        <td>-7%</td>
+                    </tr>
+                    <tr>
+                        <td>Instant Gaming</td>
+                        <td>Global</td>
+                        <td>47.88€</td>
+                        <td>-10%</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </section>
 
     <footer class="footer">
