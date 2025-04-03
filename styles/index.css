@@ -97,26 +97,23 @@ section h2 {
 /* Carrusel */
 .carousel {
     position: relative;
-    width: 100%;
-    max-width: 964px; /* Ajustado a 964px */
-    height: 410px; /* Ajustado a 410px */
-    margin: 0 auto; /* Centra el carrusel */
+    width: 964px;
+    height: 410px;
+    margin: 0 auto;
     overflow: hidden;
-    border-radius: 10px; /* Opcional: bordes redondeados */
+    border-radius: 10px;
 }
 
 .carousel-container {
     display: flex;
-    width: 300%; /* Ajusta para cubrir 3 imágenes */
-    transition: transform 1.5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
 }
 
 .carousel-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Asegura que la imagen cubra todo el contenedor */
-    flex: 1 0 100%;
-    background-color: #000; /* Evita bordes blancos si la imagen no llena el espacio */
+    width: 964px;
+    height: 410px;
+    object-fit: cover;
+    flex-shrink: 0;
 }
 
 
@@ -203,6 +200,15 @@ footer a:hover {
     font-size: 32px;
     color: #212121;
     margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-icon {
+    width: 35px;
+    height: auto;
+    margin-right: 10px;
 }
 
 .game-row {
@@ -242,6 +248,15 @@ footer a:hover {
     font-size: 16px;
     color: #757575;
     margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.store-icon {
+    width: 18px;
+    height: auto;
+    margin-right: 8px;
 }
 
 .buy-link {

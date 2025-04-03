@@ -1,4 +1,10 @@
 /* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #F4F4F4;
@@ -11,20 +17,22 @@ header {
     background: linear-gradient(135deg, #FFC107, #FF9800);
     color: #FFFFFF;
     padding: 12px;
+    text-align: center;
     border-radius: 8px;
     margin-bottom: 16px;
     display: flex;
     align-items: center;
-    text-align: left;
+    position: relative;
 }
 
-.logo {
+header .logo {
+    position: absolute;
+    left: 15px;
     width: 120px;
-    margin-right: 20px;
-    margin-left: 10px;
 }
 
 header h1 {
+    width: 100%;
     font-size: 36px;
     margin-bottom: 4px;
 }
@@ -74,6 +82,7 @@ nav ul li a:hover {
     border-radius: 8px;
     margin-bottom: 16px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
 }
 
 .game-header {
@@ -121,6 +130,12 @@ nav ul li a:hover {
     margin-top: 20px;
 }
 
+.section-title {
+    font-size: 32px;
+    color: #212121;
+    margin-bottom: 20px;
+}
+
 .price-table {
     width: 100%;
     border-collapse: collapse;
@@ -147,7 +162,6 @@ nav ul li a:hover {
     background-color: #FFEB3B;
 }
 
-/* Footer styles */
 footer {
     background: #000000;
     color: #FFFFFF;
@@ -157,6 +171,10 @@ footer {
     margin-top: 16px;
 }
 
+footer p {
+    margin-bottom: 8px;
+}
+
 footer a {
     color: #FFEB3B;
     text-decoration: none;
@@ -164,4 +182,26 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.store-table-icon {
+    width: 20px;
+    height: auto;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.table-icon {
+    width: 18px;
+    height: auto;
+    vertical-align: middle;
+    margin-right: 6px;
 }

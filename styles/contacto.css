@@ -16,20 +16,22 @@ header {
     background: linear-gradient(135deg, #FFC107, #FF9800);
     color: #FFFFFF;
     padding: 12px;
+    text-align: center;
     border-radius: 8px;
     margin-bottom: 16px;
     display: flex;
     align-items: center;
-    text-align: left;
+    position: relative;
 }
 
-.logo {
+header .logo {
+    position: absolute;
+    left: 15px;
     width: 120px;
-    margin-right: 20px;
-    margin-left: 10px;
 }
 
 header h1 {
+    width: 100%;
     font-size: 36px;
     margin-bottom: 4px;
 }
@@ -76,7 +78,7 @@ nav ul li a:hover {
     background-color: #FFFFFF;
     padding: 20px;
     border-radius: 8px;
-    margin-top: 20px;
+    margin-bottom: 16px;
     animation: fadeIn 1s ease-in-out;
 }
 
@@ -96,13 +98,19 @@ nav ul li a:hover {
 }
 
 .form-group input,
-.form-group select {
+.form-group select,
+.form-group textarea {
     width: 100%;
     padding: 10px;
     margin-top: 5px;
     font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 5px;
+}
+
+.form-group textarea {
+    resize: vertical;
+    font-family: 'Poppins', sans-serif;
 }
 
 .submit-button {
@@ -124,6 +132,16 @@ nav ul li a:hover {
     font-size: 18px;
     color: #4CAF50;
     margin-top: 20px;
+}
+
+.error {
+    color: #D32F2F;
+    font-size: 18px;
+    margin-top: 20px;
+    background-color: #FFEBEE;
+    padding: 10px;
+    border-radius: 5px;
+    border-left: 4px solid #D32F2F;
 }
 
 footer {
@@ -155,26 +173,4 @@ footer a:hover {
     to {
         opacity: 1;
     }
-}
-/* Add these styles to your existing CSS file */
-
-.form-group textarea {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    resize: vertical;
-    font-family: 'Poppins', sans-serif;
-}
-
-.error {
-    color: #D32F2F;
-    font-size: 18px;
-    margin-top: 20px;
-    background-color: #FFEBEE;
-    padding: 10px;
-    border-radius: 5px;
-    border-left: 4px solid #D32F2F;
 }
