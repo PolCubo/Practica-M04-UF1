@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles del juego - PlayCheap</title>
+    <link rel="stylesheet" href="/styles/game-details.css">
+    <link rel="icon" href="/assets/img/LogoPrincipal.jpeg" type="image/jpeg">
+</head>
+<body>
+    <header class="header">
+        <img src="/assets/img/LogoPrincipal.jpeg" alt="Logo de PlayCheap" class="logo">
+        <h1 class="title">PlayCheap</h1>
+    </header>
+
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li class="nav-item"><a href="/index.html" class="nav-link">Inicio</a></li>
+            <li class="nav-item"><a href="/pages/sobre_nosotros.html" class="nav-link">Sobre Nosotros</a></li>
+            <li class="nav-item"><a href="/pages/contacto.html" class="nav-link">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <section class="game-details">
+        <div class="game-header">
+            <img src="/assets/img/GodofWarRagnarok.webp" alt="God of War Ragnarök" class="game-cover">
+            <div class="game-info">
+                <h2 class="game-title">God of War Ragnarök</h2>
+                <p class="game-description">
+                    Embárcate en una épica y emotiva aventura con Kratos y Atreus en God of War Ragnarök, la aclamada secuela desarrollada por Santa Monica Studio. Ambientado tres años después del juego anterior, el Fimbulwinter está llegando a su fin, lo que presagia el apocalíptico Ragnarök. Kratos y su hijo adolescente Atreus deberán viajar a través de los nueve reinos, enfrentarse a dioses nórdicos como Thor y Freya, y decidir si aceptarán el destino profetizado o forjarán su propio camino. Con un sistema de combate mejorado que conserva la brutalidad característica de la saga, nuevos escenarios que explorar, y una narrativa profunda sobre las complejidades de la relación padre-hijo, God of War Ragnarök ofrece una experiencia cinematográfica inolvidable que expande el universo y la mitología establecidos en su predecesor.
+                </p>
+                <ul class="game-meta">
+                    <li><strong>Fecha de lanzamiento:</strong> 9 Noviembre 2022</li>
+                    <li><strong>Plataformas:</strong> PS5, PS4, PC</li>
+                    <li><strong>Desarrollador:</strong> Santa Monica Studio</li>
+                    <li><strong>Etiquetas:</strong> Acción, Aventura, Mitología Nórdica, Narrativa</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="price-comparison">
+            <h3 class="section-title">Comparar precios</h3>
+            
+            <div class="edition-selector">
+                <label for="edition-select">Seleccionar edición:</label>
+                <select id="edition-select">
+                    <option value="standard" selected>Edición Estándar</option>
+                    <option value="deluxe">Edición Deluxe</option>
+                </select>
+            </div>
+            
+            <table class="price-table">
+                <thead>
+                    <tr>
+                        <th><img src="/assets/img/tiendaTable.svg" alt="Tienda" class="table-icon">Tienda</th>
+                        <th><img src="/assets/img/RegionTable.svg" alt="Edición" class="table-icon">Edición</th>
+                        <th><img src="/assets/img/PrecioTable.svg" alt="Precio" class="table-icon">Precio</th>
+                        <th><img src="/assets/img/DescuentoTable.svg" alt="Descuento" class="table-icon">Descuento</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Edición Estándar -->
+                    <tr class="standard-row">
+                        <td><img src="/assets/img/logoEneba.png" alt="Eneba" class="store-table-icon">Eneba</td>
+                        <td>Estándar</td>
+                        <td>36.44€</td>
+                        <td>-13%</td>
+                    </tr>
+                    <tr class="standard-row">
+                        <td><img src="/assets/img/logoG2A.png" alt="G2A" class="store-table-icon">G2A</td>
+                        <td>Estándar</td>
+                        <td>36.81€</td>
+                        <td>-10%</td>
+                    </tr>
+                    <tr class="standard-row">
+                        <td><img src="/assets/img/logoInstantGaming.png" alt="Instant Gaming" class="store-table-icon">Instant Gaming</td>
+                        <td>Estándar</td>
+                        <td>40.93€</td>
+                        <td></td>
+                    </tr>
+                    
+                    <!-- Edición Deluxe -->
+                    <tr class="deluxe-row">
+                        <td><img src="/assets/img/logoEneba.png" alt="Eneba" class="store-table-icon">Eneba</td>
+                        <td>Deluxe</td>
+                        <td>42.73</td>
+                        <td>-12%</td>
+                    </tr>
+                    <tr class="deluxe-row">
+                        <td><img src="/assets/img/logoG2A.png" alt="G2A" class="store-table-icon">G2A</td>
+                        <td>Deluxe</td>
+                        <td>53.93</td>
+                        <td></td>
+                    </tr>
+                    <tr class="deluxe-row">
+                        <td><img src="/assets/img/logoInstantGaming.png" alt="Instant Gaming" class="store-table-icon">Instant Gaming</td>
+                        <td>Deluxe</td>
+                        <td>42.96€</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p class="footer-text">&copy; 2025 PlayCheap. Todos los derechos reservados.</p>
+        <p class="footer-text">Síguenos en:
+            <a href="" class="social-link">Twitter</a> |
+            <a href="" class="social-link">Facebook</a>
+        </p>
+    </footer>
+    
+    <script src="/js/edition-selector.js"></script>
+</body>
+</html>

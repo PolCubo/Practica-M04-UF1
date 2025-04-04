@@ -27,7 +27,7 @@ header {
 header .logo {
     position: absolute;
     left: 15px;
-    width: 120px; /* Increased from 90px */
+    width: 120px;
 }
 
 header h1 {
@@ -50,7 +50,7 @@ nav {
 }
 
 .logo {
-    width: 70px; /* increased from 50px in the HTML */
+    width: 70px;
     margin-right: 25px;
     margin-left: 10px;
 }

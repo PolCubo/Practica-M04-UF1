@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles del juego - PlayCheap</title>
+    <link rel="stylesheet" href="/styles/game-details.css">
+    <link rel="icon" href="/assets/img/LogoPrincipal.jpeg" type="image/jpeg">
+</head>
+<body>
+    <header class="header">
+        <img src="/assets/img/LogoPrincipal.jpeg" alt="Logo de PlayCheap" class="logo">
+        <h1 class="title">PlayCheap</h1>
+    </header>
+
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li class="nav-item"><a href="/index.html" class="nav-link">Inicio</a></li>
+            <li class="nav-item"><a href="/pages/sobre_nosotros.html" class="nav-link">Sobre Nosotros</a></li>
+            <li class="nav-item"><a href="/pages/contacto.html" class="nav-link">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <section class="game-details">
+        <div class="game-header">
+            <img src="/assets/img/TheWitcher3.webp" alt="The Witcher 3" class="game-cover">
+            <div class="game-info">
+                <h2 class="game-title">The Witcher 3: Wild Hunt</h2>
+                <p class="game-description">
+                    Conviértete en Geralt de Rivia, un cazador de monstruos profesional, en The Witcher 3: Wild Hunt, la obra maestra de rol de CD Projekt Red. Explora un vasto mundo abierto lleno de peligrosas criaturas, intrigas políticas y personajes complejos mientras buscas a Ciri, tu hija adoptiva y la clave para salvar el mundo. Cada elección que tomes tendrá consecuencias en esta epopeya de fantasía oscura, donde las decisiones morales nunca son sencillas. Con un sistema de combate desafiante, historias ramificadas y dos expansiones aclamadas por la crítica (Hearts of Stone y Blood and Wine), The Witcher 3 ofrece una de las experiencias de rol más profundas y satisfactorias jamás creadas.
+                </p>
+                <ul class="game-meta">
+                    <li><strong>Fecha de lanzamiento:</strong> 19 Mayo 2015</li>
+                    <li><strong>Plataformas:</strong> PC, PS5, PS4, Xbox One, Xbox Series X, Switch</li>
+                    <li><strong>Desarrollador:</strong> CD Projekt Red</li>
+                    <li><strong>Etiquetas:</strong> RPG, Mundo Abierto, Fantasía, Narrativa</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="price-comparison">
+            <h3 class="section-title">Comparar precios</h3>
+            
+            <div class="edition-selector">
+                <label for="edition-select">Seleccionar edición:</label>
+                <select id="edition-select">
+                    <option value="standard" selected>Edición Estándar</option>
+                    <option value="deluxe">Game of the Year Edition</option>
+                </select>
+            </div>
+            
+            <table class="price-table">
+                <thead>
+                    <tr>
+                        <th><img src="/assets/img/tiendaTable.svg" alt="Tienda" class="table-icon">Tienda</th>
+                        <th><img src="/assets/img/RegionTable.svg" alt="Edición" class="table-icon">Edición</th>
+                        <th><img src="/assets/img/PrecioTable.svg" alt="Precio" class="table-icon">Precio</th>
+                        <th><img src="/assets/img/DescuentoTable.svg" alt="Descuento" class="table-icon">Descuento</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Edición Estándar -->
+                    <tr class="standard-row">
+                        <td><img src="/assets/img/logoEneba.png" alt="Eneba" class="store-table-icon">Eneba</td>
+                        <td>Estándar</td>
+                        <td>7.99€</td>
+                        <td>-75%</td>
+                    </tr>
+                    <tr class="standard-row">
+                        <td><img src="/assets/img/logoG2A.png" alt="G2A" class="store-table-icon">G2A</td>
+                        <td>Estándar</td>
+                        <td>8.50€</td>
+                        <td>-71%</td>
+                    </tr>
+                    <tr class="standard-row">
+                        <td><img src="/assets/img/logoInstantGaming.png" alt="Instant Gaming" class="store-table-icon">Instant Gaming</td>
+                        <td>Estándar</td>
+                        <td>7.49€</td>
+                        <td>-77%</td>
+                    </tr>
+                    
+                    <!-- Edición GOTY -->
+                    <tr class="deluxe-row">
+                        <td><img src="/assets/img/logoEneba.png" alt="Eneba" class="store-table-icon">Eneba</td>
+                        <td>GOTY</td>
+                        <td>14.99€</td>
+                        <td>-62%</td>
+                    </tr>
+                    <tr class="deluxe-row">
+                        <td><img src="/assets/img/logoG2A.png" alt="G2A" class="store-table-icon">G2A</td>
+                        <td>GOTY</td>
+                        <td>15.50€</td>
+                        <td>-58%</td>
+                    </tr>
+                    <tr class="deluxe-row">
+                        <td><img src="/assets/img/logoInstantGaming.png" alt="Instant Gaming" class="store-table-icon">Instant Gaming</td>
+                        <td>GOTY</td>
+                        <td>13.89€</td>
+                        <td>-65%</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p class="footer-text">&copy; 2025 PlayCheap. Todos los derechos reservados.</p>
+        <p class="footer-text">Síguenos en:
+            <a href="" class="social-link">Twitter</a> |
+            <a href="" class="social-link">Facebook</a>
+        </p>
+    </footer>
+    
+    <script src="/js/edition-selector.js"></script>
+</body>
+</html>
