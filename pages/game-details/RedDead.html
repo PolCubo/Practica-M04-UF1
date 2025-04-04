@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles del juego - PlayCheap</title>
+    <link rel="stylesheet" href="/styles/game-details.css">
+    <link rel="icon" href="/assets/img/LogoPrincipal.jpeg" type="image/jpeg">
+</head>
+<body>
+    <header class="header">
+        <img src="/assets/img/LogoPrincipal.jpeg" alt="Logo de PlayCheap" class="logo">
+        <h1 class="title">PlayCheap</h1>
+    </header>
+
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li class="nav-item"><a href="/index.html" class="nav-link">Inicio</a></li>
+            <li class="nav-item"><a href="/pages/sobre_nosotros.html" class="nav-link">Sobre Nosotros</a></li>
+            <li class="nav-item"><a href="/pages/contacto.html" class="nav-link">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <section class="game-details">
+        <div class="game-header">
+            <img src="/assets/img/RedDeadRedemption2.webp" alt="Red Dead Redemption 2" class="game-cover">
+            <div class="game-info">
+                <h2 class="game-title">Red Dead Redemption 2</h2>
+                <p class="game-description">
+                    Sumérgete en la América de 1899 con Red Dead Redemption 2, la obra maestra de mundo abierto desarrollada por Rockstar Games. Protagonizada por Arthur Morgan, un forajido leal a la banda de Dutch van der Linde, la historia te llevará a través del ocaso del Salvaje Oeste mientras huyes de agentes federales y cazarrecompensas. Explora un vasto y detallado mundo abierto donde cada decisión tiene consecuencias, interactúa con cientos de personajes memorables, caza, pesca, y sobrevive en un ecosistema vibrante y realista. Con un sistema de honor que afecta cómo el mundo reacciona a ti, mecánicas de supervivencia profundas, y una narrativa emocionalmente impactante sobre lealtad, redención y el fin de una era, Red Dead Redemption 2 ofrece una de las experiencias más inmersivas y cinematográficas en la historia de los videojuegos.
+                </p>
+                <ul class="game-meta">
+                    <li><strong>Fecha de lanzamiento:</strong> 26 Octubre 2018</li>
+                    <li><strong>Plataformas:</strong> PC,PS4, Xbox One</li>
+                    <li><strong>Desarrollador:</strong> Rockstar Games</li>
+                    <li><strong>Etiquetas:</strong> Acción, Aventura, Mundo Abierto, Western</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="price-comparison">
+            <h3 class="section-title">Comparar precios</h3>
+            
+            <div class="edition-selector">
+                <label for="edition-select">Seleccionar edición:</label>
+                <select id="edition-select">
+                    <option value="standard" selected>Edición Estándar</option>
+                    <option value="deluxe">Edición Deluxe</option>
+                </select>
+            </div>
+            
+            <table class="price-table">
+                <thead>
+                    <tr>
+                        <th><img src="/assets/img/tiendaTable.svg" alt="Tienda" class="table-icon">Tienda</th>
+                        <th><img src="/assets/img/RegionTable.svg" alt="Edición" class="table-icon">Edición</th>
+                        <th><img src="/assets/img/PrecioTable.svg" alt="Precio" class="table-icon">Precio</th>
+                        <th><img src="/assets/img/DescuentoTable.svg" alt="Descuento" class="table-icon">Descuento</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Edición Estándar -->
+                    <tr class="standard-row">
+                        <td><img src="/assets/img/logoEneba.png" alt="Eneba" class="store-table-icon">Eneba</td>
+                        <td>Estándar</td>
+                        <td>11.55€</td>
+                        <td>-13%</td>
+                    </tr>
+                    <tr class="standard-row">
+                        <td><img src="/assets/img/logoG2A.png" alt="G2A" class="store-table-icon">G2A</td>
+                        <td>Estándar</td>
+                        <td>15.09€</td>
+                        <td></td>
+                    </tr>
+                    <tr class="standard-row">
+                        <td><img src="/assets/img/logoInstantGaming.png" alt="Instant Gaming" class="store-table-icon">Instant Gaming</td>
+                        <td>Estándar</td>
+                        <td>13.99€</td>
+                        <td></td>
+                    </tr>
+                    
+                    <!-- Edición Deluxe -->
+                    <tr class="deluxe-row">
+                        <td><img src="/assets/img/logoEneba.png" alt="Eneba" class="store-table-icon">Eneba</td>
+                        <td>Deluxe</td>
+                        <td>13.94</td>
+                        <td>-13%</td>
+                    </tr>
+                    <tr class="deluxe-row">
+                        <td><img src="/assets/img/logoG2A.png" alt="G2A" class="store-table-icon">G2A</td>
+                        <td>Deluxe</td>
+                        <td>16.11€</td>
+                        <td></td>
+                    </tr>
+                    <tr class="deluxe-row">
+                        <td><img src="/assets/img/logoInstantGaming.png" alt="Instant Gaming" class="store-table-icon">Instant Gaming</td>
+                        <td>Deluxe</td>
+                        <td>15.49€</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p class="footer-text">&copy; 2025 PlayCheap. Todos los derechos reservados.</p>
+        <p class="footer-text">Síguenos en:
+            <a href="" class="social-link">Twitter</a> |
+            <a href="" class="social-link">Facebook</a>
+        </p>
+    </footer>
+    <script src="/js/edition-selector.js"></script>
+</body>
+</html>

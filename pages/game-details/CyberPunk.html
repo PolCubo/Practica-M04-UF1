@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles del juego - PlayCheap</title>
+    <link rel="stylesheet" href="/styles/game-details.css">
+    <link rel="icon" href="/assets/img/LogoPrincipal.jpeg" type="image/jpeg">
+</head>
+<body>
+    <header class="header">
+        <img src="/assets/img/LogoPrincipal.jpeg" alt="Logo de PlayCheap" class="logo">
+        <h1 class="title">PlayCheap</h1>
+    </header>
+
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li class="nav-item"><a href="/index.html" class="nav-link">Inicio</a></li>
+            <li class="nav-item"><a href="/pages/sobre_nosotros.html" class="nav-link">Sobre Nosotros</a></li>
+            <li class="nav-item"><a href="/pages/contacto.html" class="nav-link">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <section class="game-details">
+        <div class="game-header">
+            <img src="/assets/img/Cyberpunk2077.webp" alt="Cyberpunk 2077" class="game-cover">
+            <div class="game-info">
+                <h2 class="game-title">Cyberpunk 2077</h2>
+                <p class="game-description">
+                    Adéntrate en Night City, una megalópolis obsesionada con el poder, el glamour y las modificaciones corporales en Cyberpunk 2077. En este RPG de mundo abierto desarrollado por CD Projekt Red, te convertirás en V, un mercenario ciberpunk que busca un implante único que podría ser la clave de la inmortalidad. Explora un futuro distópico donde las corporaciones controlan cada aspecto de la vida, personaliza tu estilo de juego con diversos implantes cibernéticos, y forma alianzas con personajes memorables como Johnny Silverhand, interpretado por Keanu Reeves. Cada decisión que tomes moldeará tu historia y el destino de Night City.
+                </p>
+                <ul class="game-meta">
+                    <li><strong>Fecha de lanzamiento:</strong> 10 Diciembre 2020</li>
+                    <li><strong>Plataformas:</strong> PC, PS5, PS4, Xbox One, Xbox Series X</li>
+                    <li><strong>Desarrollador:</strong> CD Projekt Red</li>
+                    <li><strong>Etiquetas:</strong> Acción, Aventura, RPG, Mundo Abierto</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="price-comparison">
+            <h3 class="section-title">Comparar precios</h3>
+            
+            <div class="edition-selector">
+                <label for="edition-select">Seleccionar edición:</label>
+                <select id="edition-select">
+                    <option value="standard" selected>Edición Estándar</option>
+                    <option value="deluxe">Edición Ultimate</option>
+                </select>
+            </div>
+            
+            <table class="price-table">
+                <thead>
+                    <tr>
+                        <th><img src="/assets/img/tiendaTable.svg" alt="Tienda" class="table-icon">Tienda</th>
+                        <th><img src="/assets/img/RegionTable.svg" alt="Edición" class="table-icon">Edición</th>
+                        <th><img src="/assets/img/PrecioTable.svg" alt="Precio" class="table-icon">Precio</th>
+                        <th><img src="/assets/img/DescuentoTable.svg" alt="Descuento" class="table-icon">Descuento</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Edición Estándar -->
+                    <tr class="standard-row">
+                        <td><img src="/assets/img/logoEneba.png" alt="Eneba" class="store-table-icon">Eneba</td>
+                        <td>Estándar</td>
+                        <td>29.40€</td>
+                        <td>-48%</td>
+                    </tr>
+                    <tr class="standard-row">
+                        <td><img src="/assets/img/logoG2A.png" alt="G2A" class="store-table-icon">G2A</td>
+                        <td>Estándar</td>
+                        <td>27.07€</td>
+                        <td>-52%</td>
+                    </tr>
+                    <tr class="standard-row">
+                        <td><img src="/assets/img/logoInstantGaming.png" alt="Instant Gaming" class="store-table-icon">Instant Gaming</td>
+                        <td>Estándar</td>
+                        <td>26.88€</td>
+                        <td>-55%</td>
+                    </tr>
+                    
+                    <!-- Edición Ultimate -->
+                    <tr class="deluxe-row">
+                        <td><img src="/assets/img/logoEneba.png" alt="Eneba" class="store-table-icon">Eneba</td>
+                        <td>Ultimate</td>
+                        <td>48.99€</td>
+                        <td>-30%</td>
+                    </tr>
+                    <tr class="deluxe-row">
+                        <td><img src="/assets/img/logoG2A.png" alt="G2A" class="store-table-icon">G2A</td>
+                        <td>Ultimate</td>
+                        <td>52.40€</td>
+                        <td>-25%</td>
+                    </tr>
+                    <tr class="deluxe-row">
+                        <td><img src="/assets/img/logoInstantGaming.png" alt="Instant Gaming" class="store-table-icon">Instant Gaming</td>
+                        <td>Ultimate</td>
+                        <td>47.49€</td>
+                        <td>-32%</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p class="footer-text">&copy; 2025 PlayCheap. Todos los derechos reservados.</p>
+        <p class="footer-text">Síguenos en:
+            <a href="" class="social-link">Twitter</a> |
+            <a href="" class="social-link">Facebook</a>
+        </p>
+    </footer>
+    
+    <script src="/js/edition-selector.js"></script>
+</body>
+</html>
