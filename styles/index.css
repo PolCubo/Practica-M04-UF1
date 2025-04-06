@@ -97,8 +97,9 @@ section h2 {
 /* Carrusel */
 .carousel {
     position: relative;
-    width: 964px;
-    height: 410px;
+    width: 100%;
+    max-width: 964px;
+    height: auto;
     margin: 0 auto;
     overflow: hidden;
     border-radius: 10px;
@@ -110,12 +111,11 @@ section h2 {
 }
 
 .carousel-image {
-    width: 964px;
-    height: 410px;
+    width: 100%;
+    height: auto;
     object-fit: cover;
     flex-shrink: 0;
 }
-
 
 @keyframes slide {
     0% { transform: translateX(0); }
@@ -272,3 +272,115 @@ footer a:hover {
 .buy-link:hover {
     background-color: #FF9800;
 }
+
+/* Tablets (768px - 1023px) */
+@media (max-width: 1023px) {
+    header h1 {
+        font-size: 30px;
+    }
+    
+    header .logo {
+        width: 100px;
+    }
+    
+    .game-card {
+        width: 45%;
+    }
+    
+    .section-title {
+        font-size: 28px;
+    }
+    
+    .game-title {
+        font-size: 20px;
+    }
+    
+    nav ul li a {
+        font-size: 18px;
+        padding: 10px 15px;
+    }
+}
+
+/* Móviles (hasta 767px) */
+@media (max-width: 767px) {
+    body {
+        padding: 10px;
+    }
+    
+    header {
+        padding: 10px;
+        flex-direction: column;
+    }
+    
+    header .logo {
+        position: relative;
+        left: 0;
+        width: 80px;
+        margin-bottom: 10px;
+    }
+    
+    header h1 {
+        font-size: 24px;
+    }
+    
+    nav {
+        width: 100%;
+        padding: 10px 0;
+        background-color: #000000;
+        border-top: 1px solid #e0e0e0;
+        border-bottom: 1px solid #e0e0e0;
+    }
+    
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+    
+    nav ul li {
+        margin: 0;
+        padding: 0;
+    }
+    
+    nav ul li a {
+        display: block;
+        padding: 12px 8px;
+        font-size: 16px;
+        color: #FFFFFF;
+        text-decoration: none;
+        text-align: center;
+        font-weight: 500;
+    }
+    
+    .section-title {
+        font-size: 22px;
+        flex-direction: column;
+    }
+    
+    .section-icon {
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+    
+    .game-row {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .game-card {
+        width: 100%;
+    }
+    
+    .carousel {
+        height: auto;
+        max-height: 300px;
+    }
+    
+    .carousel-image {
+        height: auto;
+        max-height: 300px;
+    }
+ }

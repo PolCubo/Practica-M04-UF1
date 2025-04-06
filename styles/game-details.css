@@ -231,3 +231,145 @@ footer a:hover {
 .deluxe-row {
     display: none;
 }
+
+/* Tablets (768px - 1023px) */
+@media (max-width: 1023px) {
+    header h1 {
+        font-size: 30px;
+    }
+    
+    header .logo {
+        width: 100px;
+    }
+    
+    nav ul li {
+        margin: 0 35px;
+    }
+    
+    .section-title {
+        font-size: 28px;
+    }
+    
+    .game-title {
+        font-size: 24px;
+    }
+    
+    nav ul li a {
+        font-size: 18px;
+        padding: 10px 15px;
+    }
+    
+    .game-header {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .game-cover {
+        width: 180px;
+        margin-bottom: 15px;
+    }
+    
+    .price-table th,
+    .price-table td {
+        padding: 10px 8px;
+        font-size: 15px;
+    }
+}
+
+/* Móviles (hasta 767px) */
+@media (max-width: 767px) {
+    body {
+        padding: 10px;
+    }
+    
+    header {
+        padding: 10px;
+        flex-direction: column;
+    }
+    
+    header .logo {
+        position: relative;
+        left: 0;
+        width: 80px;
+        margin-bottom: 10px;
+    }
+    
+    header h1 {
+        font-size: 24px;
+    }
+    
+    nav {
+        width: 100%;
+        padding: 10px 0;
+        background-color: #000000;
+        border-top: 1px solid #333;
+        border-bottom: 1px solid #333;
+    }
+    
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+    
+    nav ul li {
+        margin: 0;
+        padding: 0;
+    }
+    
+    nav ul li a {
+        display: block;
+        padding: 12px 8px;
+        font-size: 16px;
+        color: #FFFFFF;
+        text-decoration: none;
+        text-align: center;
+        font-weight: 500;
+    }
+    
+    .section-title {
+        font-size: 22px;
+        text-align: center;
+    }
+    
+    .game-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .game-cover {
+        width: 150px;
+        margin-bottom: 15px;
+    }
+    
+    .game-description {
+        font-size: 14px;
+    }
+    
+    .edition-selector {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .edition-selector label {
+        margin-bottom: 8px;
+    }
+    
+    .price-table {
+        font-size: 14px;
+    }
+    
+    .price-table th,
+    .price-table td {
+        padding: 8px 5px;
+    }
+    
+    .store-table-icon, 
+    .table-icon {
+        width: 16px;
+    }
+}
