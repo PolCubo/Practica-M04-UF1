@@ -17,6 +17,5 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     updateEditionDisplay();
-    
     editionSelect.addEventListener('change', updateEditionDisplay);
 });
